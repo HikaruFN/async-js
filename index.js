@@ -19,14 +19,17 @@ const superagent = require('superagent');
 })*/
 
 // Promises with Get Solution
-/*fs.readFile('dogs.txt', 'utf8', (err, data)=>{
+fs.readFile('dogs.txt', 'utf8', (err, data)=>{
     console.log('Breeds: ', data);
 
     superagent.get(`https://dog.ceo/api/breed/${data}/images/random`) //Il metodo get presuppone uno promise sui dati richiesti
-        .then(res=>{
+        .then(res=>{  //il metodo then si attiva all'arrivo dei dati
             console.log(res.body.message);
-        }) //il metodo then si attiva all'arrivo dei dati
-})*/
+        }).catch(err=>{ //il metodo catch serve a catturare gli errori in questo tipo di richieste
+            console.log(err);
+        })
+})
+
 
 
 
