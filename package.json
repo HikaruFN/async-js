@@ -1,0 +1,14 @@
+{
+  "name": "async-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HikaruFN",
+  "license": "ISC",
+  "description": "Studying async js",
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
